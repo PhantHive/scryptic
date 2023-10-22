@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "SCRYPT Extension",
+  "version": "0.0.1",
+  "description": "Scrypt short description of scrypt repositories",
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "declarativeContent",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "src/background/background.ts",
+    "type": "module",
+    "persistent": false
+  }
+}
