@@ -1,0 +1,73 @@
+/*
+there is the main class: web-app
+that contains two containers class: head-container and body-container
+
+I want you to add a line separator between the two containers in the middle of the extension
+center everything in the extension
+ */
+
+.web-app {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+// logo container should be top of the extension and the body container should be bottom of the extension
+// and the line separator should be in the middle of the extension
+// web-app is already centering everything in the extension with flexbox!!
+// DON T USE FLEXBOX AGAIN AS IT IS ALREADY USED IN THE MAIN CLASS
+
+
+.logo-container {
+    padding-top: 20px;
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Top of the parent container */
+    width: 100%; /* Takes the full width of the parent */
+    text-align: center; /* Centers content within */
+}
+
+.logo-container > img {
+    width: auto;
+    height: 100px;
+}
+
+.head-container {
+    position: absolute; /* Absolute positioning */
+    top: 30%; /* Top of the parent container */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    text-align: center; /* Centers content within */
+}
+
+.body-container {
+    position: absolute; /* Absolute positioning */
+    top: 40%; /* Bottom of the parent container */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    text-align: center; /* Centers content within */
+}
+
+/* Adding a line separator */
+.web-app::before {
+    content: "";
+    display: block;
+    height: 1px; /* Thickness of the line */
+    background: #ffffff; /* Color of the line. Change as needed */
+    width: 80%; /* Width of the line. Adjust as needed */
+    position: absolute; /* Absolute positioning */
+    top: 40%; /* Middle of the parent container */
+    left: 10%; /* Offset from the left, making line width as 80% */
+}
+
+.get-repo-url {
+    margin: auto;
+}
+
+.repo-images {
+    margin: 5px;
+}
+
+.repo-images > img {
+    width: auto;
+    height: 100px;
+}

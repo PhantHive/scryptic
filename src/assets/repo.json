@@ -1,0 +1,10 @@
+{
+  "data-forge": {
+    "version": "0.0.0",
+    "language": "Python",
+    "product": "Product: Data-Forge" ,
+    "description": "Dataset generator with GPT-3.5",
+    "usage": "Fine-tune AI model named Big Brain.",
+    "output": "CSV files."
+  }
+}

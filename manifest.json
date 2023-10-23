@@ -19,5 +19,11 @@
     "service_worker": "src/background/background.ts",
     "type": "module",
     "persistent": false
+  },
+  "icons": {
+    "16": "icons/scrypt-icon-16.png",
+    "32": "icons/scrypt-icon-32.png",
+    "48": "icons/scrypt-icon-48.png",
+    "128": "icons/scrypt-icon-128.png"
   }
 }
